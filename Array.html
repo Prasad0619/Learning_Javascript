@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Array</title>
+</head>
+
+<body>
+    <script>
+        var skill = ["HTML", "CSS", "Bootstrap", "JS", "React"];
+        document.write("<br>");
+
+        for (var i = 0; i <= 4; i++) {
+            document.write(skill[i]);
+            document.write("<br>");
+        }
+        document.write("<br>");
+    </script>
+    <hr><br>
+
+    <script>
+        var sum = 0;
+        var num = [10, 20, 30, 40, 50, 200, 55];
+        for (var i = 0; i <= 6; i++) {
+            document.write(num[i]);
+            sum = sum + num[i];
+            document.write("<br>");
+        }
+        document.write("<br>");
+        document.write("Sum : " + sum);
+    </script>
+    <br><br>
+    <hr><br>
+
+    <script>
+        var a = ["Kejriwal", 62, "Male", "IITian"];
+
+        document.write(a + "<br>");
+        document.write("<br>");
+
+        a[1] = 71;
+
+        document.write(a + "<br>");
+        document.write("<br>");
+
+        delete a[2];
+
+        document.write(a + "<br>");
+        document.write("<br>");
+    </script>
+    <hr><br>
+
+    <script>
+        var b = ["Kejriwal", "Gandhi", "Thackrey", "Owasi", "Mamta", "Stalin"];
+
+        document.write(b + "<br><br>");
+
+        b.sort();
+        document.write(b + "<br><br>");
+
+        b.reverse();
+        document.write(b + "<br><br>");
+    </script>
+    <hr><br>
+
+    <script>
+        var c = ["1", "2", "3", "4", "5", "6", "7", "8"];
+        document.write("Original<br>");
+        document.write(c + "<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        c.pop();
+        c.pop();   // Deletes data from the end of array.
+        c.pop();
+        document.write("POP<br>");
+        document.write(c + "<br>");
+        document.write("<br>");
+
+        c.push("9", "10", "11", "12", "13");   // adds data from end
+        document.write("PUSH<br>");
+        document.write(c + "<br>");
+        document.write("<br>");
+
+        c.shift();
+        c.shift();    //Deletes data from the start
+        c.shift();
+        document.write("SHIFT<br>");
+        document.write(c + "<br>");
+        document.write("<br>");
+
+        c.unshift("!", "@", "#");
+        document.write("Unshift<br>");
+        document.write(c + "<br>");   // adds data from the start
+    </script>
+    <br>
+    <hr><br>
+
+    <script>
+        var e = ["1", "2", "3", "4", "5", "6", "7", "8"];
+        var f = ["Kejriwal", "Gandhi", "Thackrey", "Owasi", "Mamta", "Stalin"];
+
+        document.write("CONCAT<br>");
+        var g = e.concat(f,e);
+        document.write(g+"<br>");
+        document.write("<br>");
+
+        document.write("JOIN<br>");
+        var h = g.join(" | ");          // Replaces " , "
+        document.write(h+"<br>");
+    </script>
+</body>
+
+</html>

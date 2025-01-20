@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <h1>Arithmatic Operation</h1>
+                <form name="myform" class=" border border-primary p-5">
+                    <div class="md-4">
+                        <label class="label-control" for="">Number One</label>
+                        <input class="form-control mb-3" type="number" name="n1" placeholder="Enter firt Number">
+
+                        <label class="label-control" for="">Number Two</label>
+                        <input class="form-control mb-3 " name="n2" type="number" placeholder="Enter Second Number">
+
+                        <label class="label-contro  " for="">Result</label>
+                        <input class="form-control mb-3" name="res" type="number" placeholder="your result">
+                    </div>
+
+                    <div class="md-4">
+                        <button class="btn btn-primary mb-3 " type="button" onclick="add()">+</button>
+                        <button class="btn btn-primary mb-3" type="button" onclick="sub()">-</button>
+                        <button class="btn btn-primary mb-3 " type="button" onclick="mul()">*</button>
+                        <button class="btn btn-primary mb-3 " type="button" onclick="div()">/</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script>
+        // var a, b, result;
+        function add() {
+            a = parseInt(document.myform.n1.value);
+            b = parseInt(document.myform.n2.value);
+            result = a + b;
+
+            document.myform.res.value = result.toFixed(2);
+        }
+        function sub() {
+            a = parseInt(document.myform.n1.value);
+            b = parseInt(document.myform.n2.value);
+            result = a - b;
+
+            document.myform.res.value = result.toFixed(2);
+        }
+        function mul() {
+            a = parseInt(document.myform.n1.value);
+            b = parseInt(document.myform.n2.value);
+            result = a * b;
+
+            document.myform.res.value = result.toFixed(2);
+        }
+        function div() {
+            a = parseInt(document.myform.n1.value);
+            b = parseInt(document.myform.n2.value);
+            result = a / b;
+
+            document.myform.res.value = result.toFixed(2);
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>

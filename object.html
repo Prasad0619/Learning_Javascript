@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = {
+            fname: 'Sam',
+            lname: 'Brenner',
+            age: '31',
+            email:'SamBrenner@gmail.com',
+            players: ['SKY','Captain Cool','GOAT','Hitman'],    //array in object
+            address: {
+                'city':'Mumbai',
+                'country':'India'        //Oject in object
+            },
+            phone: 906723674,
+            message:'Hello World'
+        };
+        document.write("First Name : "+a.fname+"<br>Last Name : "+a.lname+"<br>");
+        document.write("Age : "+a.age+"<br>Loved Player : "+a.players[1]+"<br>");
+        document.write("Contact No : "+a.phone+"<br> Email : "+a.email+"<br> Address : "+a.address.city+"<br>");
+        document.write("Message : "+a.message);
+    </script>
+<br><br><hr><br>
+<script>
+    var employee = [{name:'Sam ', age:31, address: 'Boston'},
+                     {name:'Victoria ', age:26, address: 'Los Santos'},
+                        {name:'Brian ', age:48, address: 'Frankfut'},
+                        {name:'Sujit ', age:19, address: 'Bhopal'},
+                        {name:'Venkatesh ', age:67, address: 'trivandrum'},  ];
+        
+        for(var b = 0; b < employee.length ; b++){
+            document.write(employee[b].name +" "+ employee[b].age +" "+ employee[b].address +"<br><br>")
+        }
+</script>
+
+</body>
+</html>
